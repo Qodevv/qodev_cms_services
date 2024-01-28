@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\qodev_content_management_services.props" />
+</Project>

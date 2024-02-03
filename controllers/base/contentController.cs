@@ -30,37 +30,22 @@ public abstract class contentController<TEntity, TRepository> : ControllerBase
         return Ok(result);
     }
 
-    [Route("cms-list/{contentKey}"), HttpGet]
+    [Route("cms-list"), HttpPost]
     [AllowAnonymous]
-    public async Task<IActionResult> CmsList([FromRoute] string contentKey)
+    public async Task<IActionResult> CmsList([FromBody] CmsChangeScreenParams cmsChangeScreenParams)
     {
-        var result = await _repository.CmsList(contentKey);
+        var result = await _repository.CmsList(cmsChangeScreenParams);
         return Ok(result);
     }
 
-    [Route("cms-filter-url-key/{contentKey}"), HttpGet]
+    [Route("cms-filter-url-key"), HttpPost]
     [AllowAnonymous]
-    public async Task<IActionResult> CmsFilter([FromRoute] string contentKey)
+    public async Task<IActionResult> CmsFilter([FromBody] CmsChangeScreenParams cmsChangeScreenParams)
     {
-        var result = await _repository.CmsUrlKey(contentKey);
+        var result = await _repository.CmsUrlKey(cmsChangeScreenParams);
         return Ok(result);
     }
 
-    [Route("cms-current-screen"), HttpGet]
-    [AllowAnonymous]
-    public async Task<IActionResult> CmsCurrentScreen()
-    {
-        var result = await _repository.CmsCurrentScreen();
-        return Ok(result);
-    }
-
-    [Route("cms-update-current-screen"), HttpPost, HttpPut]
-    [AllowAnonymous]
-    public async Task<IActionResult> CmsUpdateCurrentScreen([FromBody] CmsChangeScreenParams cmsChangeScreenParams)
-    {
-        var result = await _repository.UpdateCmsCurrentScreen(cmsChangeScreenParams);
-        return Ok(result);
-    }
 
     [Route("cms-look-cms-paths"), HttpPost]
     [AllowAnonymous]
@@ -70,11 +55,11 @@ public abstract class contentController<TEntity, TRepository> : ControllerBase
         return Ok(result);
     }
 
-    [Route("cms-page-not-found"), HttpPut]
+    [Route("cms-initialization"), HttpPost]
     [AllowAnonymous]
-    public async Task<IActionResult> FindPageNotFound()
+    public async Task<IActionResult> CmsInitialization()
     {
-        var result = await _repository.UpdateScreenForPageNotFound();
+        var result = await _repository.CmsInit();
         return Ok(result);
     }
 }

@@ -1,0 +1,132 @@
+{
+  "cmsdeserialize": [
+    {
+      "pageKey": "signin",
+      "access": 0,
+      "path": "/signin",
+      "content": [
+        {
+          "contentKey": "signin-block",
+          "hasAuthorizedBlock": false,
+          "hasForm": false,
+          "hasContainer": false,
+          "hasStepper": false,
+          "hasMultiForm": false,
+          "hasSidebar": false,
+          "header": {
+            "elements": {
+              "headerTitle": "Qodev",
+              "stickyHeader": false,
+              "menus": [
+                {
+                  "link": "/about",
+                  "name": "About",
+                  "relatedLinks": "",
+                  "subMenuItems": []
+                }
+              ],
+              "useRawLogoUrl": true,
+              "imageSrc": ""
+            }
+          },
+          "elements": {
+            "buttons": [
+              {
+                "buttonType": "normal",
+                "buttonKey": "Signin",
+                "pageUrl": "",
+                "variant": "primary",
+                "size": "sm",
+                "loading": false,
+                "actionKey": "form-signin-action",
+                "shouldNavigate": false,
+                "href": ""
+              }
+            ],
+            "alertMessageKey": {},
+            "labels":[
+              {
+                "key": "About Us",
+                "variant": "button"
+              }
+            ],
+            "customLabel": {}
+          },
+          "forms": {
+            "formKey": "login_form",
+            "elements": {
+              "fields": []
+            }
+          },
+          "stepperForm": [],
+          "multiForm": []
+        }
+      ],
+      "isDisabled": 0
+    },
+    {
+      "pageKey": "home",
+      "access": 0,
+      "path": "/home",
+      "content": [
+        {
+          "contentKey": "home-block",
+          "hasAuthorizedBlock": false,
+          "hasForm": false,
+          "hasContainer": false,
+          "hasStepper": false,
+          "hasMultiForm": false,
+          "hasSidebar": false,
+          "header": {
+            "elements": {
+              "headerTitle": "Qodev",
+              "stickyHeader": false,
+              "menus": [
+                {
+                  "link": "/about",
+                  "name": "About",
+                  "relatedLinks": "",
+                  "subMenuItems": []
+                }
+              ],
+              "useRawLogoUrl": true,
+              "imageSrc": ""
+            }
+          },
+          "elements": {
+            "buttons": [
+              {
+                "buttonType": "normal",
+                "buttonKey": "Signin",
+                "pageUrl": "",
+                "variant": "primary",
+                "size": "sm",
+                "loading": false,
+                "actionKey": "form-signin-action",
+                "shouldNavigate": false,
+                "href": ""
+              }
+            ],
+            "alertMessageKey": {},
+            "labels":[
+              {
+                "key": "About Us",
+                "variant": "button"
+              }
+            ],
+            "customLabel": {}
+          },
+          "forms": {
+            "formKey": "login_form",
+            "elements": {
+              "fields": []
+            }
+          },
+          "stepperForm": [],
+          "multiForm": []
+        }
+      ],
+      "isDisabled": 0
+    }
+  ]
+}

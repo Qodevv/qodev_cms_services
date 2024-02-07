@@ -35,18 +35,15 @@ namespace qodev_content_management_services.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("contentKey")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("currentScreen")
-                        .HasColumnType("int");
-
                     b.Property<int>("isDisabled")
                         .HasColumnType("int");
+
+                    b.Property<string>("pageKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("path")
                         .IsRequired()

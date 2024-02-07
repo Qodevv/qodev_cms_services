@@ -1,9 +1,12 @@
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using qodev_content_management_services.db;
 using qodev_content_management_services.implementation;
 using qodev_content_management_services.models;
 using qodev_content_management_services.repository;
 using qodev_content_management_services.utils;
+using qodev_content_management_services.utils.classes;
 using qodev_utilization.utils.Response;
 
 namespace qodev_content_management_services.core.business;
@@ -21,32 +24,30 @@ public abstract class ef_cms<TEntity, TContext> : ICmsRepository<TEntity>
 
     public async Task<AppResponse> enrollCms(Cms cms)
     {
-        var findCms = await _context.Set<TEntity>().AnyAsync(x => x.contentKey == cms.contentKey || x.path == cms.path);
+        var findCms = await _context.Set<TEntity>().AnyAsync(x => x.pageKey == cms.pageKey || x.path == cms.path);
         if (findCms)
         {
             return new AppResponse { Success = false, ErrorMessage = "ContentKey already exists"};
         }
         else
         {
-            cms.created_at = DateTime.Now;
-            cms.updated_at = DateTime.Now;
             await _context.CmsEnumerable.AddAsync(cms);
             await _context.SaveChangesAsync();
             return new AppResponse { Success = true, ErrorMessage = "Success"};
         }
     }
 
-    public async Task<List<TEntity>> CmsList(string contentKey)
+    public async Task<List<TEntity>> CmsList(CmsChangeScreenParams cmsChangeScreenParams)
     {
         List<TEntity> cms = await _context.Set<TEntity>()
-            .Where(x => x.contentKey == contentKey).ToListAsync();
+            .Where(x => x.path == cmsChangeScreenParams.currentKey).ToListAsync();
         return cms;
     }
 
-    public async Task<dynamic> CmsUrlKey(string contentKey)
+    public async Task<dynamic> CmsUrlKey(CmsChangeScreenParams cmsChangeScreenParams)
     {
         var findUrlKey = await _context.Set<TEntity>()
-            .Where(x => x.contentKey == contentKey)
+            .Where(x => x.path == cmsChangeScreenParams.currentKey)
             .FirstOrDefaultAsync();
         if (findUrlKey != null)
         {
@@ -58,62 +59,8 @@ public abstract class ef_cms<TEntity, TContext> : ICmsRepository<TEntity>
         }
     }
 
-    public async Task<dynamic> CmsCurrentScreen()
-    {
-        var getContentKeyByCurrentScreen = await _context
-            .Set<TEntity>()
-            .Where(x => x.currentScreen == 1)
-            .FirstOrDefaultAsync();
-        if (getContentKeyByCurrentScreen != null)
-        {
-            return getContentKeyByCurrentScreen.contentKey;
-        }
-        else
-        {
-            return "home-block";
-        }
-    }
 
-    public async Task<dynamic> UpdateCmsCurrentScreen(CmsChangeScreenParams cmsChangeScreenParams)
-    {
-        var paths = new List<string> { cmsChangeScreenParams.currentKey };
-        var itemToUpdate = await _context.Set<TEntity>()
-            .Where(x => paths.Contains(x.path)).ToListAsync();
-        if (itemToUpdate.Any())
-        {
-            foreach (var item in itemToUpdate)
-            {
-                item.currentScreen = (item.currentScreen == 0) ? 1 : 0;
-            }
-
-            await _context.SaveChangesAsync();
-            return 200;
-        }
-        else
-        {
-            var item404 = await _context.Set<TEntity>().FirstOrDefaultAsync(item => item.path == "/page_not_found");
-            if (item404 != null)
-            {
-                item404.currentScreen = 1;
-                var allItems = await _context.Set<TEntity>().ToListAsync();
-
-                foreach (var item in allItems)
-                {
-                    if (item.path != "/page_not_found")
-                    {
-                        item.currentScreen = 0;
-                    }
-                }
-                await _context.SaveChangesAsync();
-                return 404; 
-            }
-            else
-            {
-                return 500; 
-            }
-        }
-    }
-
+   
     public async Task<dynamic> CheckCmsPaths(CmsChangeScreenParams cmsChangeScreenParams)
     {
         var findAnyCmsPaths = await _context.Set<TEntity>()
@@ -121,27 +68,39 @@ public abstract class ef_cms<TEntity, TContext> : ICmsRepository<TEntity>
         return findAnyCmsPaths;
     }
 
-    public async Task<dynamic> UpdateScreenForPageNotFound()
+    public async Task<AppResponse> CmsInit()
     {
-        var item404 = await _context.Set<TEntity>().FirstOrDefaultAsync(item => item.path == "/page_not_found");
-        if (item404 != null)
-        {
-            item404.currentScreen = 1;
-            var allItems = await _context.Set<TEntity>().ToListAsync();
+        string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
+        string jsonFilePath = Path.Combine(projectRoot, "utils", "storage", "cms.json");
+        var json = File.ReadAllText(jsonFilePath);
+        var cmsJson = JsonConvert.DeserializeObject<Root>(json);
 
-            foreach (var item in allItems)
-            {
-                if (item.path != "/page_not_found")
-                {
-                    item.currentScreen = 0;
-                }
-            }
-            await _context.SaveChangesAsync();
-            return 200; 
-        }
-        else
+        foreach (var VARIABLE in cmsJson.cmsdeserialize)
         {
-            return 500; 
+            var checkCmsIfExist = await _context.Set<TEntity>()
+                .AnyAsync(x => x.pageKey == VARIABLE.pageKey);
+            if (checkCmsIfExist)
+            {
+                return new AppResponse { Success = false, ErrorMessage = "cms_exist" };
+            }
+            else
+            {
+                var entity = new Cms
+                {
+                    pageKey = VARIABLE.pageKey,
+                    access = VARIABLE.access,
+                    path = VARIABLE.path,
+                    isDisabled = VARIABLE.isDisabled,
+                    content = JsonConvert.SerializeObject(VARIABLE.content),
+                    created_at = DateTime.Now,
+                    updated_at = DateTime.Now
+                };
+                await _context.CmsEnumerable.AddAsync(entity);
+                await _context.SaveChangesAsync();
+                
+            }
         }
+
+        return new AppResponse { Success = false, ErrorMessage = "no_cms" };
     }
 }

@@ -12,7 +12,7 @@ using qodev_content_management_services.db;
 namespace qodev_content_management_services.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20240126070819_InitialMigration")]
+    [Migration("20240130173011_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -38,18 +38,15 @@ namespace qodev_content_management_services.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("contentKey")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("currentScreen")
-                        .HasColumnType("int");
-
                     b.Property<int>("isDisabled")
                         .HasColumnType("int");
+
+                    b.Property<string>("pageKey")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("path")
                         .IsRequired()

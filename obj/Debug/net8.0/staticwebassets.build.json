@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "bVe11XSkGXwwoQneX7udy70dhVbUQNeWCgmOe/7F3W0=",
+  "Hash": "FPXIB2Mpe2+qhQ/IHbKVH1n7TS/FFet4trfbtiiLRZI=",
   "Source": "qodev_content_management_services",
   "BasePath": "_content/qodev_content_management_services",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\JM Sevilla\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+      "Identity": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
       "Version": 2,
-      "Source": "qodev_utilization",
+      "Source": "qodev_authentication_services",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
@@ -18,9 +18,9 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "D:\\qodev_backend\\qodev_authentication_services\\qodev_authentication_services.csproj",
+      "Identity": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
       "Version": 2,
-      "Source": "qodev_authentication_services",
+      "Source": "qodev_utilization",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",

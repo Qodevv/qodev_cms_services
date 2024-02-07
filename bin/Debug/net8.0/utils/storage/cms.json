@@ -33,7 +33,10 @@
             "buttons": [
               {
                 "buttonType": "normal",
-                "buttonKey": "Signin",
+                "buttonElement": {
+                  "key": "button_signin",
+                  "value": "Login"
+                },
                 "pageUrl": "",
                 "variant": "primary",
                 "size": "sm",
@@ -46,17 +49,15 @@
             "alertMessageKey": {},
             "labels":[
               {
-                "key": "About Us",
-                "variant": "button"
+                "key": "username_field",
+                "value": "Username"
+              },
+              {
+                "key": "password_field",
+                "value": "Password"
               }
             ],
             "customLabel": {}
-          },
-          "forms": {
-            "formKey": "login_form",
-            "elements": {
-              "fields": []
-            }
           },
           "stepperForm": [],
           "multiForm": []
@@ -97,7 +98,10 @@
             "buttons": [
               {
                 "buttonType": "normal",
-                "buttonKey": "Signin",
+                "buttonElement": {
+                  "key": "button_signin",
+                  "value": "Login"
+                },
                 "pageUrl": "",
                 "variant": "primary",
                 "size": "sm",
@@ -111,7 +115,7 @@
             "labels":[
               {
                 "key": "About Us",
-                "variant": "button"
+                "value": "button"
               }
             ],
             "customLabel": {}

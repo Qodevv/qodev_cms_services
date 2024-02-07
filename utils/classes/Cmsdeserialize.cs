@@ -27,10 +27,15 @@ public class Header
     public Elements elements { get; set; }
 }
 
+public class ButtonElement
+{
+    public string key { get; set; }
+    public string value { get; set; }
+}
 public class Buttons
 {
     public string buttonType { get; set; }
-    public string buttonKey { get; set; }
+    public ButtonElement buttonElement { get; set; }
     public string pageUrl { get; set; }
     public string variant { get; set; }
     public string size { get; set; }
@@ -52,27 +57,13 @@ public class Element
 public class LabelValues
 {
     public string key { get; set; }
-    public string variant { get; set; }
+    public string value { get; set; }
 }
 
 
 
 public class CustomLabel
 {
-}
-
-public class FieldsValue
-{
-    
-}
-public class Fields
-{
-    public List<FieldsValue> fields { get; set; }
-}
-public class Forms
-{
-    public string formKey { get; set; }
-    public Fields elements { get; set; }
 }
 
 public class AlertMessageKey
@@ -90,7 +81,6 @@ public class Content
     public bool hasSidebar { get; set; }
     public Header header { get; set; }
     public Element elements { get; set; }
-    public Forms forms { get; set; }
     public List<object> stepperForm { get; set; }
     public List<object> multiForm { get; set; }
 }

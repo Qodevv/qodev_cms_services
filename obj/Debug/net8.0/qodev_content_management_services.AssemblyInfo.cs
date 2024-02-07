@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("qodev_content_management_services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d5bcf6da9b32789fc8e157e6e218dca78f0befe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4811174aee94f0c26e205a4addc49cc236422990")]
 [assembly: System.Reflection.AssemblyProductAttribute("qodev_content_management_services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("qodev_content_management_services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

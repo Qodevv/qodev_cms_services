@@ -22,7 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\qodev_authentication_services\qodev_authentication_services.csproj" />
-      <ProjectReference Include="C:\Users\JM Sevilla\RiderProjects\QDVMicroservices\qodev_utilization\qodev_utilization.csproj" />
+      <ProjectReference Include="..\qodev_utilization\qodev_utilization.csproj" />
     </ItemGroup>
 
 </Project>

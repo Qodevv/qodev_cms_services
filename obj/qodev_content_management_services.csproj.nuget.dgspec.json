@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {}
+    "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
+    "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
+        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
         "projectName": "qodev_authentication_services",
-        "projectPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
-        "packagesPath": "C:\\Users\\jm4583104\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\obj\\",
+        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
+        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jm4583104\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -80,21 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {
+    "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
+        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
         "projectName": "qodev_content_management_services",
-        "projectPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
-        "packagesPath": "C:\\Users\\jm4583104\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_cms_services\\obj\\",
+        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
+        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jm4583104\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -106,11 +106,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
-                "projectPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj"
+              "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
+                "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj"
               },
-              "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
-                "projectPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj"
+              "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
+                "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj"
               }
             }
           }
@@ -163,21 +163,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
+    "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
         "projectName": "qodev_utilization",
-        "projectPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
-        "packagesPath": "C:\\Users\\jm4583104\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\obj\\",
+        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jm4583104\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -219,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

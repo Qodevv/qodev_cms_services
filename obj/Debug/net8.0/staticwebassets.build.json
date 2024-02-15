@@ -1,31 +1,31 @@
 {
   "Version": 1,
-  "Hash": "FPXIB2Mpe2+qhQ/IHbKVH1n7TS/FFet4trfbtiiLRZI=",
+  "Hash": "OaKnHCz8E5rIkOwOL6PJMFiSfs9pMkHwqxmPqK2LE1w=",
   "Source": "qodev_content_management_services",
   "BasePath": "_content/qodev_content_management_services",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
+      "Identity": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
       "Version": 2,
       "Source": "qodev_authentication_services",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "C:\\Users\\jm4583104\\RiderProjects\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+      "Identity": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
       "Version": 2,
       "Source": "qodev_utilization",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

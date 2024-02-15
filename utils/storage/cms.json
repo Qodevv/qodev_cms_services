@@ -84,6 +84,12 @@
               "stickyHeader": false,
               "menus": [
                 {
+                  "link": "/home",
+                  "name": "Home",
+                  "relatedLinks": "",
+                  "subMenuItems": []
+                },
+                {
                   "link": "/about",
                   "name": "About",
                   "relatedLinks": "",
@@ -100,7 +106,7 @@
                 "buttonType": "normal",
                 "buttonElement": {
                   "key": "button_signin",
-                  "value": "Login"
+                  "value": "Log in"
                 },
                 "pageUrl": "",
                 "variant": "primary",
@@ -108,14 +114,26 @@
                 "loading": false,
                 "actionKey": "form-signin-action",
                 "shouldNavigate": false,
-                "href": ""
+                "href": "/signin"
               }
             ],
             "alertMessageKey": {},
             "labels":[
               {
-                "key": "About Us",
-                "value": "button"
+                "key": "QFP",
+                "value": "Qodev Freelance Platform"
+              },
+              {
+                "key": "QFP_DESC",
+                "value": "Find a Freelancer and book for your project."
+              },
+              {
+                "key": "QFP_ANNOUNCEMENT",
+                "value": "Announcing our next round of funding."
+              },
+              {
+                "key": "QFP_READMORE",
+                "value": "Read more"
               }
             ],
             "customLabel": {}

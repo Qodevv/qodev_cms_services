@@ -20,6 +20,7 @@ public class Elements
     public List<MenuItems> menus { get; set; }
     public bool useRawLogoUrl { get; set; }
     public string imageSrc { get; set; }
+    public List<Buttons> floatRightButtons {get;set;}
 }
 
 public class Header
@@ -45,12 +46,29 @@ public class Buttons
     public string href { get; set; }
 }
 
+public class ServicesElements {
+    public string name {get;set;}
+    public string description {get;set;}
+    public string icon {get;set;}
+}
+
+public class ImageSourceElements {
+    public string key { get;set;}
+    public string value {get;set;}
+}
+
+public class DataElements {
+    public List<ServicesElements> services {get;set;}
+    public List<ImageSourceElements> imageSource {get;set;}
+}
+
 public class Element
 {
     public List<Buttons> buttons { get; set; }
     public AlertMessageKey alertMessageKey { get; set; }
     public List<LabelValues> labels { get; set; }
     public CustomLabel customLabel { get; set; }
+    public DataElements data {get;set;}
 }
 
 

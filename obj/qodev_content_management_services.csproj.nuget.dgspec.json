@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {}
+    "D:\\qodev_api\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {}
   },
   "projects": {
-    "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
+    "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
+        "projectUniqueName": "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
         "projectName": "qodev_authentication_services",
-        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
-        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
-        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\obj\\",
+        "projectPath": "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj",
+        "packagesPath": "C:\\Users\\JM Sevilla\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JM Sevilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -80,37 +82,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {
+    "D:\\qodev_api\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
+        "projectUniqueName": "D:\\qodev_api\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
         "projectName": "qodev_content_management_services",
-        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
-        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
-        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_cms_services\\obj\\",
+        "projectPath": "D:\\qodev_api\\QDVMicroservices\\qodev_cms_services\\qodev_content_management_services.csproj",
+        "packagesPath": "C:\\Users\\JM Sevilla\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_api\\QDVMicroservices\\qodev_cms_services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JM Sevilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
-                "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj"
+              "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj": {
+                "projectPath": "D:\\qodev_api\\QDVMicroservices\\qodev_authentication_services\\qodev_authentication_services.csproj"
               },
-              "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
-                "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj"
+              "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
+                "projectPath": "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj"
               }
             }
           }
@@ -128,6 +132,10 @@
             "IntelliTect.Coalesce.Swashbuckle": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -163,26 +171,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
+    "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+        "projectUniqueName": "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
         "projectName": "qodev_utilization",
-        "projectPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
-        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
-        "outputPath": "D:\\qodev_microservices\\QDVMicroservices\\qodev_utilization\\obj\\",
+        "projectPath": "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\qodev_utilization.csproj",
+        "packagesPath": "C:\\Users\\JM Sevilla\\.nuget\\packages\\",
+        "outputPath": "D:\\qodev_api\\QDVMicroservices\\qodev_utilization\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JM Sevilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -219,7 +229,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
